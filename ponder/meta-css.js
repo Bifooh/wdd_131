@@ -6,7 +6,14 @@ let area = PI * radius * radius;
 
 console.log("The area of the circle is: " + area);
 
-// /////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+
+const one = 1;
+const two = '2';
+console.log(one + two); //outputs 12, not 3, because of type coercion
+
+///////////////////////////////////////////////////////
                         
 let course = "CSE131"; //global scope
 if (true) {
