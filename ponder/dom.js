@@ -9,11 +9,9 @@ const topics = document.querySelector("#topics");
 topics.style.color = "purple";
 
 const wraper = document.getElementById("content");
-wraper.style.backgroundColor = "lightblue";
+wraper.style.backgroundColor = "white";
 
 let listItem = document.querySelector(".list");
-
-listItem.style.border = "3px solid black";
 
 let paragraph = document.querySelector("p");
 paragraph.style.fontSize = "40px";
@@ -24,3 +22,17 @@ paragraph.classList.add("background");
 const image = document.querySelector("img");
 image.setAttribute("alt", "Lights");
 image.setAttribute("src", "https://www.w3schools.com/w3images/lights.jpg");
+
+
+const dropdown = document.querySelector("#webdevlist");
+const html = document.querySelector("#html");
+const css = document.querySelector("#css");
+const js = document.querySelector("#js");
+
+dropdown.addEventListener('change', function() {
+    html.style.backgroundColor = "white";
+    css.style.backgroundColor = "white";
+    js.style.backgroundColor = "white";
+    let selectedOption = dropdown.value;
+    document.getElementById(selectedOption).style.backgroundColor = "yellow";
+});
