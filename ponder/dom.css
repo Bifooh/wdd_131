@@ -50,3 +50,7 @@ img {
     padding: 20px;
     text-align: center;
 }
+
+.highlight {
+    background-color: yellow;
+}

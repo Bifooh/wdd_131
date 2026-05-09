@@ -36,3 +36,7 @@ dropdown.addEventListener('change', function() {
     let selectedOption = dropdown.value;
     document.getElementById(selectedOption).style.backgroundColor = "yellow";
 });
+
+listItem.addEventListener('click', function() {
+    listItem.classList.toggle("highlight");
+});
