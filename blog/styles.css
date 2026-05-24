@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body,
+main {
+    margin: 0;
+    font-family: "Arvo", serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav h1 {
+    color: brown;
+}
+
+nav {
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#nav-bar {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+#nav-bar li {
+    margin: 3px;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    transition: color .2s, background .2s;
+}
+
+nav a:hover {
+    color: white;
+    background: darkorange;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 20px;
+}
+
+.meta-data {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.meta-data ul {
+    list-style: none;
+    text-align: right;
+}
+
+hr {
+    background-color: orange;
+    width: 3px;
+    border-radius: 5px;
+}
+
+.book-cover {
+    margin: 0 30px;
+    padding: 30px;
+}
+
+.book-cover h2 {
+    color: purple;
+}
+
+footer {
+    border-top: 1px solid orange;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .book-container {
+        grid-template-columns: 1fr 1px 2fr;
+        gap: 25px;
+    }
+}
