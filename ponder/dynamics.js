@@ -29,3 +29,11 @@ student.forEach(function(item) {
     name.innerHTML = html;
     container.appendChild(name);    
 })
+
+const pets = ['cat', 'dog', 'bird'];
+const animals = new Array ('pig', 'goat', 'sheep');
+
+pets.push('lizard');
+
+pets[2] = 'bunny';
+console.log(pets)
