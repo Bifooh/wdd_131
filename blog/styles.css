@@ -43,7 +43,7 @@ nav a:hover {
     background: darkorange;
 }
 
-.book-container {
+article {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -81,7 +81,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-    .book-container {
+    article {
         grid-template-columns: 1fr 1px 2fr;
         gap: 25px;
     }
