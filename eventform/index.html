@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Event ticket form for WDD 131">
+  <title>Event Ticket</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>Event Ticket</h1>
+
+      <form id="ticket-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="firstName">
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="lastName">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ticket-type">Type</label>
+            <select id="ticket-type" name="ticketType">
+              <option value="">Choose one</option>
+              <option value="student">Student</option>
+              <option value="guest">Guest</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="event-date">Event Date</label>
+            <input type="date" id="event-date" name="eventDate">
+          </div>
+        </div>
+
+        <div class="form-group hidden" id="code-field">
+          <label for="code-input" id="code-label">Student I#</label>
+          <input type="text" id="code-input" name="codeInput">
+        </div>
+
+        <button type="submit">Create Ticket</button>
+      </form>
+
+      <div id="form-errors" class="messages" aria-live="polite"></div>
+
+      <section id="ticket-output" class="ticket hidden" aria-live="polite">
+        <h2>Ticket Created</h2>
+        <p id="ticket-name"></p>
+        <p id="ticket-type-output"></p>
+        <p id="ticket-date"></p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
