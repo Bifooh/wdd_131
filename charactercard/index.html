@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Voryx</title>
+    <script src="script.js" defer></script>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Voryx">
+    <meta property="og:description" content="Simple Character interaction, health decrease and increase">
+    <meta property="og:url" content="https://bifooh.github.io/wdd_131/charactercard/index.html">
+    <meta property="og:image" content="https://bifooh.github.io/wdd_131/charactercard/character.png">
+
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <div id="card">
+        <img src="character.png" alt="creature from space with planets in the background">
+        <div class="stripe">
+            <h2>Voryx</h2>
+            <div class="container">
+                <p id="health"></p>
+                <!-- extra -->
+                <div id="healthbar">
+                    <div id="healthfill"></div>
+                </div>
+            </div>
+        </div>
+        <p>The Void Reaper</p>
+    </div>
+
+    <div class="action-btns">
+        <a id="hitbtn">Hit!</a>
+        <a id="healbtn">Heal</a>
+    </div>
+
+</body>
+</html>

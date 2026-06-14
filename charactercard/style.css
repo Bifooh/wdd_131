@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Syne+Mono&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 35px grey;
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+
+#card img {
+    width: 400px;
+    border-radius: 15px 15px 0 0;
+}
+
+.stripe {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    background-color: #021140;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.stripe h2,
+.stripe p {
+    color: white;
+    margin: 0;
+}
+
+.action-btns {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+a {
+    padding: 15px 25px;
+    background: #4162A6;
+    color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #2D17BF;
+}
+
+/* EXTRA IDEAS */
+
+#healthbar {
+    width: 120px;
+    height: 12px;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid white;
+    margin-top: 5px;
+}
+
+#healthfill {
+    height: 100%;
+    width: 100%;
+    background-color: #5529F2;
+    transition: width 0.2s;
+}
+
+.shake {
+    animation: shake 0.25s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-8px);
+    }
+
+    50% {
+        transform: translateX(8px);
+    }
+
+    75% {
+        transform: translateX(-8px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.heal-glow {
+    animation: healGlow 0.5s;
+}
+
+@keyframes healGlow {
+    0% {
+        box-shadow: 2px 2px 35px grey;
+    }
+
+    50% {
+        box-shadow: 0 0 35px #5529F2;
+    }
+
+    100% {
+        box-shadow: 2px 2px 35px grey;
+    }
+}
