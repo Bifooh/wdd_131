@@ -45,12 +45,6 @@ nav img {
     width: 30px;
 }
 
-nav p {
-    color: grey;
-    font-size: 18px;
-    margin: 10px 5px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
